@@ -1,0 +1,100 @@
+:root {
+    --bold: "Roboto Bold", sans-serif;
+    --normal: "Roboto", sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    color: grey;
+    font-family: var(--normal); 
+    width:100vw;
+    height: 100vh; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7) ), url("/assets/images/bg01.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid; 
+    align-items: center;
+}
+.main {
+    margin-top:150px;
+    width: 30%;
+    margin-left: 30px;
+}
+.tittle { 
+    font-size: 52px;
+    color: white; 
+    line-height: 60px;
+    margin-bottom: 30px;
+} 
+.description {
+    color:grey;
+    margin-bottom: 18px;
+}  
+.footer {
+    align-self:end;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}      
+
+.icons a { 
+    color: gray;
+    margin-right: 13px;
+}
+.copyright {
+    margin-top:6px;
+    font-size: 12px;
+} 
+.email {
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    background: transparent;
+    padding: 8px;
+    width: 13rem;
+    margin-right: 15px; 
+    margin-top: 5px;
+    font-family: var(--normal);
+    color: rgba(202, 201, 201, 0.746);
+}
+.signup {
+    background-color: #1cb495;
+    color: white;
+    font-style: var(--bold);
+    border: 2px solid white;
+    padding:10px; 
+    border-radius: 5px;
+    cursor: pointer;
+
+} 
+
+
+@media only screen and (max-width: 700px) {
+    .tittle, .description {
+        display: none;
+    }
+    .main {
+        width: 100%;
+        margin: 100px 10px;
+    }
+
+    .email, .signup {
+        width: 80%;
+        margin: 10px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
